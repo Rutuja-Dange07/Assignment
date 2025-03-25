@@ -25,7 +25,14 @@ for i in list:
     s=s+i
 print("Sum of all elements",s)
 
-# # Q5. Program to compare elements of list. 
+# Q5.Program to compare elements of list. 
+def compare(lst):
+    if lst[0] == lst[1]:
+        print("All elements are the same.")
+    else:
+        print("The elements are not the same.")
+compare([5, 5, 5, 5])
+compare([1, 1, 3, 4])
 
 
 # Q6. Program to find maximum and minimum of list. 
@@ -49,7 +56,7 @@ list=[1,2,3,4,5]
 print(list[::-1])
 
 # Q9. Write a loop that traverses the previous list and prints the length of each element. What 
-# happens if you send an integer to len
+# happens if you send an integer to len 
 list=["apple","banana","orange","pineapple"]
 for i in list:
     print(len(i))
